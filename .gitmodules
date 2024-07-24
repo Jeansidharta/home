@@ -1,0 +1,3 @@
+[submodule "home/neovim"]
+	path = home/neovim
+	url = https://github.com/Jeansidharta/neovim-flake/tree/main
