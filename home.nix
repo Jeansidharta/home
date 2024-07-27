@@ -1,6 +1,5 @@
 {config, pkgs, self, system,...}:
 let
-  lib = pkgs.lib;
   unwrapFlakeInput = input: if self.inputs.${input} ? defaultPackage then self.inputs.${input}.defaultPackage.${system} else self.inputs.${input}.packages.${system}.default;
 in {
   imports = import ./modules;
@@ -28,6 +27,7 @@ in {
     bat
 	ripgrep
 
+    orca-slicer
     (unwrapFlakeInput "neovim-with-plugins")
 
 	# Broken?
