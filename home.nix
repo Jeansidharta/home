@@ -1,7 +1,20 @@
-{config, pkgs, self, system,...}:
+{
+  config,
+  pkgs,
+  self,
+  system,
+  ...
+}:
 let
-  unwrapFlakeInput = input: if self.inputs.${input} ? defaultPackage then self.inputs.${input}.defaultPackage.${system} else self.inputs.${input}.packages.${system}.default;
-in {
+  lib = pkgs.lib;
+  unwrapFlakeInput =
+    input:
+    if self.inputs.${input} ? defaultPackage then
+      self.inputs.${input}.defaultPackage.${system}
+    else
+      self.inputs.${input}.packages.${system}.default;
+in
+{
   imports = import ./modules;
   home.username = "sidharta";
   home.homeDirectory = "/home/sidharta";
@@ -25,18 +38,21 @@ in {
     mpv
     yazi
     bat
-	ripgrep
+    ripgrep
 
     orca-slicer
     (unwrapFlakeInput "neovim-with-plugins")
 
-	# Broken?
-	# plover.dev
+    # Broken?
+    # plover.dev
 
     # === Non free ===
     discord
     telegram-desktop
-	
+    # (plover.dev.overrideAttrs (old: {
+    # nativeBuildInputs = old.nativeBuildInputs ++ [ qt5Full ];
+    # }))
+
     # === Fonts ===
     jetbrains-mono
 
@@ -58,7 +74,9 @@ in {
   services.flameshot.enable = true;
   services.picom = import ./home/import/picom.nix { inherit config pkgs; };
   services.sxhkd-systemd = import ./home/import/sxhkd.nix { inherit config pkgs; };
-  services.wallpaper-manager = import ./home/import/wallpaper-manager.nix {  inherit unwrapFlakeInput; };
+  services.wallpaper-manager = import ./home/import/wallpaper-manager.nix {
+    inherit unwrapFlakeInput;
+  };
   services.syncplay = import ./home/import/syncplay.nix { inherit; };
 
   systemd.user.startServices = true;

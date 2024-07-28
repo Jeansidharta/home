@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     neovim-with-plugins = {
-      url = "path:./home/neovim";
+      url = "git+file:./home/neovim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wallpaper-manager = {

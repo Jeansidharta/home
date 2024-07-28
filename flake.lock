@@ -8,7 +8,7 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-SjHL7NlFSfa9RLVE/DLUq7Zx/tFEITWEwv+zCgeOtx4=",
+        "narHash": "sha256-11oxmQf0rbQPr4SHBTAFMfQoNurONT+fxsq+zyIkF1w=",
         "path": "./home/raw/eww/scripts/bspwm-desktops-report",
         "type": "path"
       },
@@ -78,7 +78,7 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-J1A0+Uy5w5waggCVlvOywGT+/yf9VyzkR5badYvCrCo=",
+        "narHash": "sha256-mjeEhXmP4fOoDnOh7/V5y8P3xKoJizUGhtcB7nIIIXY=",
         "path": "./scripts/eww-bar-selector",
         "type": "path"
       },
@@ -404,14 +404,17 @@
         "various-textobjs": "various-textobjs"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-GaFDNGjB4k8sKNc4wpN+n8CJwCFkbRDmzKJ/2Knlszk=",
-        "path": "./home/neovim",
-        "type": "path"
+        "lastModified": 1722107430,
+        "narHash": "sha256-2m8qtcPa1NjL0Kedi7G5onGdxCoI7vBmNNhpcyH8/VQ=",
+        "ref": "refs/heads/main",
+        "rev": "f3cbca47f38bf4cb17d1d641c8de3c15bae20233",
+        "revCount": 7,
+        "type": "git",
+        "url": "file:./home/neovim"
       },
       "original": {
-        "path": "./home/neovim",
-        "type": "path"
+        "type": "git",
+        "url": "file:./home/neovim"
       }
     },
     "nixpkgs": {
@@ -724,11 +727,11 @@
     "treesitter": {
       "flake": false,
       "locked": {
-        "lastModified": 1721995894,
-        "narHash": "sha256-o5sraD1L/hyqbNDLhNLEgMoBTjLPIl7An3sUfwzB0P4=",
+        "lastModified": 1722094470,
+        "narHash": "sha256-5MXUVKicju9aVN5cxZriMM2+3jgHTDuMDXsVo9q6084=",
         "owner": "nvim-treesitter",
         "repo": "nvim-treesitter",
-        "rev": "e265fec94c7dc0c8c64cb86820ff5ad3ee135c7d",
+        "rev": "f97e0de0053df1cb3b9f74b9b1239acced1b7d9a",
         "type": "github"
       },
       "original": {
@@ -777,11 +780,11 @@
     "various-textobjs": {
       "flake": false,
       "locked": {
-        "lastModified": 1721934869,
-        "narHash": "sha256-Weh3SKOmlu7YCEvaoow5k/DKUmIrYE4hSesEa8A3trQ=",
+        "lastModified": 1722095923,
+        "narHash": "sha256-MzezaMxhYh4sUMsEwOCh4/ka00NqFqaCKKcIz/Ck08k=",
         "owner": "chrisgrieser",
         "repo": "nvim-various-textobjs",
-        "rev": "b8f7e971672aea04b754b70feb53b0bc71901a7c",
+        "rev": "82ba233ec6f4de0e1d577c55140e6d31019d3369",
         "type": "github"
       },
       "original": {
@@ -799,7 +802,7 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-KiaKiEn+6ihtZN94ZGHB5tdJhhUm5PxO9VeL0en0eR0=",
+        "narHash": "sha256-+t2VK1rBswB6BIw1omzrkCoCoaw4DxVtKI4Uj7lEZzo=",
         "path": "./home/raw/eww/scripts/volume-watcher",
         "type": "path"
       },
@@ -835,7 +838,7 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-6qJVIJsNAkQExWw2e6Y0n5yhrz7C+3qa1FjicFojyu8=",
+        "narHash": "sha256-xx/4AOqvT+z1z+yv1S61A38JvrXXaM1em1elKYsuyvY=",
         "path": "./home/raw/eww/scripts/window-title-watcher",
         "type": "path"
       },
